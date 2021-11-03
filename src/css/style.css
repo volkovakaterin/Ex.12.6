@@ -1,0 +1,55 @@
+p {
+    color: black;
+}
+
+ .container {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+
+.items {
+    width: 33.3%;
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+}
+.items-item {
+    position: relative;
+    border: 1px solid #999;
+    padding: 10px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    cursor: pointer;
+    list-style-type: none;
+    word-wrap:break-word;
+}
+.delete-card {
+    visibility: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    background: url(../img/pngwing.com.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+.cancel-add {
+    background: url(../img/pngwing.com.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+ 
+.dragged {
+    /* border-radius: 10px; */
+    width: 602px;
+    position: absolute;
+    z-index: 999;
+    cursor: grabbing;
+    /* pointer-events: none;
+    background: #fff; */
+}
